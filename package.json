@@ -1,0 +1,41 @@
+{
+  "name": "async-await-test",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "postinstall": "npm run turn-off-cli-transform",
+    "turn-off-cli-transform": "node ./turn-off-cli-transform.mjs",
+    "turn-on-cli-transform": "node ./turn-on-cli-transform.mjs"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "next",
+    "@angular/common": "next",
+    "@angular/compiler": "next",
+    "@angular/core": "next",
+    "@angular/forms": "next",
+    "@angular/platform-browser": "next",
+    "@angular/platform-browser-dynamic": "next",
+    "@angular/router": "next",
+    "rxjs": "~6.6.0",
+    "tslib": "^2.2.0",
+    "zone.js": "https://1058952-24195339-gh.circle-artifacts.com/0/zone.js/zone.js-pr42768-b6515d8ec2.tgz"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "next",
+    "@angular/cli": "next",
+    "@angular/compiler-cli": "https://1058889-24195339-gh.circle-artifacts.com/0/angular/compiler-cli-pr42808-01eb01b0ec.tgz",
+    "@types/jasmine": "~3.6.0",
+    "@types/node": "^12.11.1",
+    "jasmine-core": "~3.7.0",
+    "karma": "~6.3.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.0.3",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "^1.5.0",
+    "typescript": "~4.3.2"
+  }
+}
