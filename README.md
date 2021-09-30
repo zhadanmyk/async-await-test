@@ -21,7 +21,9 @@ You can manually turn this transform on and off using `npm run turn-on-cli-trans
 
 ### Run the test code
 
-- The tests are run in the browser via Karma (and Jasmine): `npm test`
+The CLI is not able to run the TS transform for the unit tests, so these are run using jasmine on node.js:
+
+- Compile and run the tests: `npm test`.
 
 ### Build the app code
 

@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "test": "ngc -p tsconfig.spec.json && jasmine out-tsc/spec/test.js",
     "postinstall": "npm run turn-off-cli-transform",
     "turn-off-cli-transform": "node ./turn-off-cli-transform.mjs",
     "turn-on-cli-transform": "node ./turn-on-cli-transform.mjs"
@@ -30,6 +30,7 @@
     "@angular/compiler-cli": "https://1058889-24195339-gh.circle-artifacts.com/0/angular/compiler-cli-pr42808-01eb01b0ec.tgz",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
+    "jasmine": "^3.9.0",
     "jasmine-core": "~3.7.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
